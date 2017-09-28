@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.sixdee</groupId>
+	<artifactId>sd-parent</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+	<name>Sd-Parent</name>
+	<description>Parent project of Sd</description>
+	<modules>
+		<module>sd-data</module>
+		<module>sd-core</module>
+	</modules>
+	<properties>
+		<ehcache-version>2.8.3</ehcache-version>
+		<org.hibernate-version>4.3.6.Final</org.hibernate-version>
+		<org.springframework-version>4.1.6.RELEASE</org.springframework-version>
+	</properties>
+	<dependencies>
+		<!--Apache mina -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-mina2</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+	</dependencies>
+</project>
